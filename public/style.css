@@ -216,7 +216,7 @@ button span:hover{
 
 
 
-  @media only screen and (max-width: 1020px) {
+  @media only screen and (max-width: 1050px) {
   
     .friendsimg {
         display: flex;
@@ -238,79 +238,121 @@ button span:hover{
         border-radius: 50%;
     }
   }
-
-
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 920px) {
   
     .friendsimg {
         display: flex;
         align-content: center;
          align-items: center;
-         margin-left:250px;
+         margin-left: 200px;
          max-width: 1000px;
         flex-direction: row;
         
     }
-
- 
-    
-    .friendsimg img{
+.friendsimg img{
         display: flexbox;
         align-content: center;
         align-items: center;
-        position: relative;
+      margin: 10px;
+       
         max-width:70px;
         height: 70px;
         border-radius: 50%;
     }
   }
 
-  @media only screen and (max-width:725px) {
+  @media only screen and (max-width: 735px) {
   
     .friendsimg {
         display: flex;
         align-content: center;
          align-items: center;
-         margin-left:0px;
-         max-width: 400px;
+         margin-left: 120px;
+         max-width: 1000px;
         flex-direction: row;
         
     }
-
- 
-    
-    .friendsimg img{
+.friendsimg img{
         display: flexbox;
         align-content: center;
         align-items: center;
-        position: relative;
+      margin: 10px;
+       
         max-width:70px;
         height: 70px;
         border-radius: 50%;
     }
   }
-  @media only screen and (max-width:520px) {
 
-    .footer-box{
-        border-radius: none;
-    }
-
-    .friendsimg{
-
+  @media only screen and (max-width: 735px) {
+  
+    .friendsimg {
         display: flex;
-    
-        padding: 0;
-        max-width: 300px;
+        align-content: center;
+         align-items: center;
+         margin-left: 100px;
+         max-width: 1000px;
         flex-direction: row;
- 
+        
     }
-    
-    .friendsimg img{
+.friendsimg img{
         display: flexbox;
-        margin: 10px;
+        align-content: center;
+        align-items: center;
+      margin: 10px;
+       
+        max-width:70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 570px) {
+  
+    .friendsimg {
+        display: flex;
         flex-direction: row;
-        max-width: 40px;
-        height: 40px;
+        justify-content: center;
+        align-content: center;
+         align-items: center;
+         margin-left: 50px;
+         max-width: 1000px;
+      
+        
+    }
+.friendsimg img{
+        display: flexbox;
+        align-content: center;
+        align-items: center;
+      margin: 10px;
+       
+        max-width:70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+  
+    .friendsimg {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+         align-items: center;
+         margin-left: 10px;
+         max-width: 1000px;
+      
+        
+    }
+.friendsimg img{
+        display: flexbox;
+        align-content: center;
+        align-items: center;
+      margin: 10px;
+       
+        max-width:70px;
+        height: 70px;
         border-radius: 50%;
     }
   }
@@ -318,27 +360,30 @@ button span:hover{
 
 
   @media only screen and (max-width: 329px) {
-
-    .footer-box{
-        border-radius: none;
-    }
-
-    .friendsimg{
-
+  
+    .friendsimg {
         display: flex;
-        margin:-250px 10px;
-        padding: 0;
-        max-width: 200px;
         flex-direction: row;
- 
+        justify-content: center;
+        align-content: center;
+         align-items: center;
+          max-width: 1000px;
+      
+        
     }
-    
-    .friendsimg img{
+.friendsimg img{
         display: flexbox;
-        margin: 10px;
-        flex-direction: row;
-        max-width: 40px;
-        height: 40px;
+        align-content: center;
+        align-items: center;
+      margin: 10px;
+       
+        max-width:70px;
+        height: 70px;
         border-radius: 50%;
     }
   }
+
+
+
+
+ 
