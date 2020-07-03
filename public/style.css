@@ -85,7 +85,7 @@ h1{
 
 .box{
 
-    margin: 50px auto;
+    margin: 95px auto;
     max-width: 800px;
     border-radius: 5px;
     background-color: #a84d4d;
@@ -192,11 +192,153 @@ button span:hover{
    
 } 
 
-@media only screen and (max-width: 329px) {
-    .box .form-input {
-      margin-left: 30px;
+
+.friendsimg{
+
+    display: flex;
+    flex-direction: column;
+    margin:-250px 10px;
+    padding: 0;
+    max-width: 200px;
+  position: absolute;
+  
+}
+
+.friendsimg img{
+    display: flexbox;
+    margin: 10px;
+    flex-direction: column;
+    max-width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+  @media only screen and (max-width: 1020px) {
+  
+    .friendsimg {
+        display: flex;
+        align-content: center;
+         align-items: center;
+         margin-left: 300px;
+         max-width: 1000px;
+        flex-direction: row;
+        
     }
+.friendsimg img{
+        display: flexbox;
+        align-content: center;
+        align-items: center;
+      margin: 10px;
+       
+        max-width:70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+  }
+
+
+  @media only screen and (max-width: 950px) {
+  
+    .friendsimg {
+        display: flex;
+        align-content: center;
+         align-items: center;
+         margin-left:250px;
+         max-width: 1000px;
+        flex-direction: row;
+        
+    }
+
+ 
+    
+    .friendsimg img{
+        display: flexbox;
+        align-content: center;
+        align-items: center;
+        position: relative;
+        max-width:70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+  }
+
+  @media only screen and (max-width:725px) {
+  
+    .friendsimg {
+        display: flex;
+        align-content: center;
+         align-items: center;
+         margin-left:0px;
+         max-width: 400px;
+        flex-direction: row;
+        
+    }
+
+ 
+    
+    .friendsimg img{
+        display: flexbox;
+        align-content: center;
+        align-items: center;
+        position: relative;
+        max-width:70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+  }
+  @media only screen and (max-width:520px) {
+
     .footer-box{
         border-radius: none;
+    }
+
+    .friendsimg{
+
+        display: flex;
+    
+        padding: 0;
+        max-width: 300px;
+        flex-direction: row;
+ 
+    }
+    
+    .friendsimg img{
+        display: flexbox;
+        margin: 10px;
+        flex-direction: row;
+        max-width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 329px) {
+
+    .footer-box{
+        border-radius: none;
+    }
+
+    .friendsimg{
+
+        display: flex;
+        margin:-250px 10px;
+        padding: 0;
+        max-width: 200px;
+        flex-direction: row;
+ 
+    }
+    
+    .friendsimg img{
+        display: flexbox;
+        margin: 10px;
+        flex-direction: row;
+        max-width: 40px;
+        height: 40px;
+        border-radius: 50%;
     }
   }

@@ -65,9 +65,12 @@ app.post('/', function(req , res){
 
     const postTodo= req.body.newItems;
     const listName = req.body.list;
+   
+    
 
     const item=new Todo({
-        name:postTodo
+        name:postTodo,
+       
     });
 
    if(listName === "Welcome"){
