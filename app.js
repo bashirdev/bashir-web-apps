@@ -28,17 +28,12 @@ const todoItemSchema={
 const Todo =mongoose.model('Todo', todoItemSchema);
 
 const todo1 = new Todo({
-    name:'Good moring'
-});
-const todo2 = new Todo({
-    name:'Good afternoon'
+    name:'Make a Note'
 });
 
-const todo3 = new Todo({
-    name:'Good Evening',
-});
 
-const todoArrey = [todo1,todo2, todo3];
+
+const todoArrey = [todo1];
 
 const listSchema={
     name:String,
@@ -61,7 +56,7 @@ app.get('/' , function(req,res){
               }
           });
       }else{
-        res.render("list", {todoTitle:'Today', dateToday:formDatejs,   myList:foundTodo}); 
+        res.render("list", {todoTitle:'Welcome', dateToday:formDatejs,   myList:foundTodo}); 
       }
   });
 });
@@ -75,7 +70,7 @@ app.post('/', function(req , res){
         name:postTodo
     });
 
-   if(listName === "Today"){
+   if(listName === "Welcome"){
         item.save();
         res.redirect('/');
      }else{
@@ -97,7 +92,7 @@ app.post('/delete', function(req,res){
 
 const deleteCheckedBox =req.body.checkBox;
 const hiddenInputName = req.body.hiddenInputName;
-if(hiddenInputName === "Today"){
+if(hiddenInputName === "Welcome"){
     Todo.findByIdAndRemove(deleteCheckedBox, function(err){
         if(err){
             console.log(err);
