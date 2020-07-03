@@ -113,6 +113,6 @@ button span:hover{
 
 @media only screen and (max-width: 329px) {
     .box .form-input {
-      margin-left: 60px;
+      margin-left: 30px;
     }
   }
