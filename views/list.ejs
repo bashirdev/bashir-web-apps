@@ -1,0 +1,40 @@
+<%- include('partials/header'); %>
+
+<div class="box">
+
+<h1> <%= dateToday %> </h1>
+
+
+
+</div>
+<div class="box">
+
+  <h1> <%= todoTitle %> </h1>
+  
+  
+  
+  </div>
+
+<div class="box">
+
+  <% myList.forEach(function(list){ %>
+    <form action="/delete" method="POST">
+    <div class="item">
+  <input  type="checkbox" name='checkBox' value="<%= list._id %>" onChange="this.form.submit()">
+      <p> <%= list.name %> </p>
+    </div>
+    <input type="hidden" name="hiddenInputName" value="<%= todoTitle %>"></input> 
+  </form>
+    <%  });%>
+
+ 
+ 
+
+
+<form  action="/" method="POST">
+  <input class="form-input" placeholder="New Item" type="text" name="newItems" autocomplete="off">
+
+  <button type="submit" class="btn" name="list" value=<%= todoTitle %> ><span>+</span></button>
+</form>
+</div>
+<%- include('partials/footer'); %>
