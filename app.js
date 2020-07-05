@@ -18,8 +18,8 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 let formDatejs =date.getDate();
 
-// mongodb+srv://admin-bashir:<password>@cluster0.e4sek.mongodb.net/<dbname>?retryWrites=true&w=majority
-mongoose.connect('mongodb+srv://admin-bashir:admin123@cluster0.e4sek.mongodb.net/todolistDB', {useNewUrlParser:true, useUnifiedTopology: true })
+
+mongoose.connect('mongodb+srv://admin-bashir:<my-password will be here>@cluster0.e4sek.mongodb.net/todolistDB', {useNewUrlParser:true, useUnifiedTopology: true })
 
 const todoItemSchema={
     name:String
